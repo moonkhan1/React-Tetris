@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+div{
+  font-family: 'Steampunk Machinery Font', sans-serif;
+}
+
+@font-face {
+  font-family: 'Pixel';
+  src: url('font/Pixel-LCD-7.woff') format('woff');
+}

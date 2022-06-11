@@ -2,10 +2,14 @@ body {
   margin: 0;
 }
 div{
-  font-family: 'Steampunk Machinery Font', sans-serif;
-}
+  font-family: 'Radio Edit', sans-serif;
+}                                               
 
-@font-face {
+/* @font-face {
   font-family: 'Pixel';
   src: url('font/Pixel-LCD-7.woff') format('woff');
-}
+} */
+/* @font-face {
+  font-family: 'Steampunk font by *hannarb';
+  src: url('font/Steampunk_Font_by_hannarb.ttf') format('ttf');
+} */

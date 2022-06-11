@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { createStage } from '../gameHelpers';
+import { createStage } from '../MovementChecker';
 
 //styles
 import { StyledTetrisWrapper, StyledTetris } from './styles/StyledTetris';
@@ -9,12 +9,12 @@ import { StyledTetrisWrapper, StyledTetris } from './styles/StyledTetris';
 import { useInterval } from '../hooks/useInterval';
 import { usePlayer } from '../hooks/usePlayer';
 import { useStage } from '../hooks/useStage';
-import { useGameStatus } from '../hooks/gameStatics';
+import { useGameStatus } from '../hooks/Statistics';
 
 import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
-import { checkCollision } from '../gameHelpers';
+import { checkCollision } from '../MovementChecker';
 
 const Tetris = () => {
 
@@ -95,6 +95,9 @@ const Tetris = () => {
       }
       else if (keyCode === 38) {
         playerRotation(stage, 1) // 1 = saat eqrebi istiqametinde donus
+      }
+      else if (keyCode === 96) {
+        playerRotation(stage, -1) // -1 = saat eqrebinin eksi istiqametinde donus
       }
     }
   }

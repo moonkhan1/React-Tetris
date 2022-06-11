@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createStage } from '../gameHelpers';
+import { createStage } from '../MovementChecker';
 
 export const useStage = (player, resetPlayer) => {
   const [stage, setStage] = useState(createStage());
@@ -25,7 +25,7 @@ export const useStage = (player, resetPlayer) => {
         row.map(cell => (cell[1] === 'clear' ? [0, 'clear'] : cell)),
       );
 
-      // Then draw the tetromino
+      // Then draw the tetris objects
       player.tetromino.forEach((row, y) => {
         row.forEach((value, x) => {
           if (value !== 0) {

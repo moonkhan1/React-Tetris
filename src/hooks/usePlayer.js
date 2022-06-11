@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-import { STAGE_HEIGHT, STAGE_WIDTH, checkCollision } from "../gameHelpers";
-import { TETROMINOS, randomTetromino} from '../tetrominos';
+import { STAGE_HEIGHT, STAGE_WIDTH, checkCollision } from "../MovementChecker";
+import { TETROMINOS, randomTetromino} from '../TetrisObjects';
 
 
 export const usePlayer =()=>{
